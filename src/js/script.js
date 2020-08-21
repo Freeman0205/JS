@@ -1,5 +1,32 @@
 'use strict';
 
+let startBtn = document.getElementById('start'),
+    budgetValue = document.getElementsByClassName('budget-value')[0],
+    dayBudget = document.getElementsByClassName('daybudget-value')[0],
+    level = document.getElementsByClassName('level-value')[0],
+    expenses = document.getElementsByClassName('expenses-value')[0],
+    optionalExpenses = document.getElementsByClassName('optionalexpenses-value')[0],
+    optIncome = document.getElementsByClassName('income-value')[0],
+    monthSavings = document.getElementsByClassName('monthsavings-value')[0],
+    yearSavings = document.getElementsByClassName('yearsavings-value')[0],
+    
+    mustExpenses = document.getElementsByClassName('expenses-item'),
+    expensesBtn = document.getElementsByTagName('button')[0],
+    optionalExpensesBtn = document.getElementsByTagName('button')[1],
+    dayBudgetBtn = document.getElementsByTagName('button')[2],
+    totalBtn = document.getElementsByTagName('button')[3],
+    inputOptExpenses = document.querySelectorAll('.optionalexpenses-item'),
+    inputOptIncome = document.querySelectorAll('.choose-income'),
+    accumulationCheck = document.querySelectorAll('#savings'),
+    sumValue = document.querySelectorAll('.choose-sum'),
+    percentValue = document.querySelectorAll('.choose-percent'),
+    yearValue = document.querySelectorAll('.year-value'),
+    monthValue = document.querySelectorAll('.month-value'),
+    dayValue = document.querySelectorAll('.day-value');
+    
+
+
+
 let money, time;
 
 
@@ -141,13 +168,6 @@ for (let key in appData) {
 //     i++;
 // }
 // while (i < 2);
-
-
-
-
-
-
-
 
 
 
